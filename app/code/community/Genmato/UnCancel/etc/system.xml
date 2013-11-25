@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <genmato_core>
+            <groups>
+                <genmato_uncancel>
+                    <label>Uncancel Order</label>
+                    <frontend_type>text</frontend_type>
+                    <frontend_model>genmato_core/system_config_form_fieldset_extensions</frontend_model>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                </genmato_uncancel>
+            </groups>
+        </genmato_core>
+    </sections>
+</config>

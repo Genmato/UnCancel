@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <Genmato_UnCancel>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Genmato_Core/>
+            </depends>
+        </Genmato_UnCancel>
+    </modules>
+</config>

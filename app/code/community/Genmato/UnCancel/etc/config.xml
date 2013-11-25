@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <Genmato_UnCancel>
+            <version>1.0.0</version>
+        </Genmato_UnCancel>
+    </modules>
+
+    <global>
+        <helpers>
+            <genmato_uncancel>
+                <class>Genmato_UnCancel_Helper</class>
+            </genmato_uncancel>
+        </helpers>
+
+        <models>
+            <genmato_uncancel>
+                <class>Genmato_UnCancel_Model</class>
+            </genmato_uncancel>
+        </models>
+
+        <events>
+            <adminhtml_widget_container_html_before>
+                <observers>
+                    <genmato_uncancel_button_add>
+                        <type>model</type>
+                        <class>genmato_uncancel/observer</class>
+                        <method>addButton</method>
+                    </genmato_uncancel_button_add>
+                </observers>
+            </adminhtml_widget_container_html_before>
+        </events>
+    </global>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <genmato_uncancel after="Mage_Adminhtml">Genmato_UnCancel</genmato_uncancel>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>

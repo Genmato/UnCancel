@@ -37,7 +37,7 @@
             <adminhtml>
                 <args>
                     <modules>
-                        <genmato_uncancel after="Mage_Adminhtml">Genmato_UnCancel</genmato_uncancel>
+                        <uncancel after="Mage_Adminhtml">Genmato_UnCancel</uncancel>
                     </modules>
                 </args>
             </adminhtml>

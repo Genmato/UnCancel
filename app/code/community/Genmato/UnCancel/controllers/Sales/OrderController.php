@@ -3,7 +3,7 @@
 class Genmato_UnCancel_Sales_OrderController extends Mage_Adminhtml_Controller_Action
 {
 
-    public function UncancelAction()
+    public function uncancelAction()
     {
         $id = $this->getRequest()->getParam('id', false);
 

@@ -37,7 +37,12 @@ class Genmato_UnCancel_Model_Uncancel extends Mage_Core_Model_Abstract
                 $currentState = $order->getState();
                 $currentStatus = $order->getStatus();
 
-                $order->setState($currentState, $currentStatus, Mage::helper('adminhtml')->__('Order uncanceled'), false)->save();
+                $order->setState(
+                    $currentState,
+                    $currentStatus,
+                    Mage::helper('adminhtml')->__('Order uncanceled'),
+                    false
+                )->save();
                 $order->save();
             } catch (Exception $ex) {
                 Mage::log('Error uncancel order: ' . $ex->getMessage());

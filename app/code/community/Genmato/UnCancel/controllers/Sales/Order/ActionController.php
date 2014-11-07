@@ -1,6 +1,6 @@
 <?php
 
-class Genmato_UnCancel_Sales_OrderController extends Mage_Adminhtml_Controller_Action
+class Genmato_UnCancel_Sales_Order_ActionController extends Mage_Adminhtml_Controller_Action
 {
 
     public function uncancelAction()
@@ -14,7 +14,7 @@ class Genmato_UnCancel_Sales_OrderController extends Mage_Adminhtml_Controller_A
                 $this->_getSession()->addError($this->__('Unable to uncancel the order!'));
             }
         }
-        $this->_redirect('*/*/');
+        $this->_redirectReferer();
     }
 
 

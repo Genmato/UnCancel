@@ -32,7 +32,7 @@ class Genmato_UnCancel_Model_Observer
     {
         return Mage::helper('adminhtml')
             ->getUrl(
-                '*/sales_order/uncancel',
+                '*/sales_order_action/uncancel',
                 array(
                     'id' => $this->getOrder()->getId()
                 )

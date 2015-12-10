@@ -1,0 +1,22 @@
+{
+  "name": "genmato/uncancel",
+  "type": "magento-module",
+  "description": "Genmato Un Cancel Order extension for Magento 1.x",
+  "homepage":"https://github.com/Genmato/UnCancel",
+  "license": "OSL-3.0",
+  "authors": [
+    {
+      "name":"Genmato BV",
+      "email": "support@genmato.com"
+    }
+  ],
+  "require": {
+    "php": "~5.5.0|~5.6.0|~7.0.0"
+  },
+  "extra": {
+    "map" : [
+      ["app/etc/modules/Genmato_UnCancel.xml", "app/etc/modules/Genmato_UnCancel.xml"],
+      ["app/code/community/Genmato/UnCancel", "app/code/community/Genmato/UnCancel"]
+    ]
+  }
+}
